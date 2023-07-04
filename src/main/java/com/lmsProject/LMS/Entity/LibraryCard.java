@@ -40,7 +40,6 @@ public class LibraryCard {
     // Fk is a primary key of parent
     Student student;
 
-
     @OneToMany(mappedBy = "card",cascade = CascadeType.ALL)
     List<Transaction> transactionList = new ArrayList<>();
 
